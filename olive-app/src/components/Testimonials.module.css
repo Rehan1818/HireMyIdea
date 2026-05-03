@@ -1,0 +1,58 @@
+.section { padding: 100px 0; background: var(--cream); overflow: hidden; }
+.header { text-align: center; padding: 0 24px; margin-bottom: 56px; }
+.eyebrow {
+  display: inline-block;
+  font-size: 12px; font-weight: 600;
+  text-transform: uppercase; letter-spacing: 1.5px;
+  color: var(--olive-green); background: var(--pale-green);
+  padding: 6px 16px; border-radius: var(--radius-pill); margin-bottom: 18px;
+}
+.title {
+  font-family: 'Fraunces', serif;
+  font-size: clamp(32px, 5vw, 48px);
+  font-weight: 800; line-height: 1.1;
+  color: var(--dark-green); letter-spacing: -1.5px; margin-bottom: 14px;
+}
+.subtitle { font-size: 16px; color: var(--light-text); font-weight: 300; }
+
+.marqueeWrapper { display: flex; flex-direction: column; gap: 16px; }
+.marquee { overflow: hidden; width: 100%; padding: 8px 0; }
+.track { display: flex; gap: 16px; width: max-content; }
+
+.card {
+  background: var(--white);
+  border-radius: var(--radius-md);
+  padding: 28px 24px;
+  width: 300px;
+  flex-shrink: 0;
+  border: 1px solid var(--border-light);
+  box-shadow: var(--shadow-sm);
+}
+.stars { color: #f5a623; font-size: 14px; letter-spacing: 2px; margin-bottom: 14px; }
+.reviewText {
+  font-size: 14px; color: var(--dark-green);
+  line-height: 1.65; margin-bottom: 20px; font-weight: 300;
+  font-style: italic;
+}
+.reviewer { display: flex; align-items: center; gap: 12px; }
+.avatar {
+  width: 38px; height: 38px;
+  background: var(--olive-green);
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  color: white; font-size: 15px; font-weight: 600;
+  flex-shrink: 0;
+}
+.reviewerName { font-size: 13.5px; font-weight: 600; color: var(--dark-green); }
+.reviewerRole { font-size: 12px; color: var(--muted-text); margin-top: 1px; }
+
+.ratingBadge {
+  display: inline-flex; align-items: center; gap: 14px;
+  background: var(--dark-green); color: white;
+  padding: 16px 28px; border-radius: var(--radius-pill);
+  margin: 48px auto 0; display: flex;
+  width: fit-content; margin: 48px auto 0;
+}
+.bigStar { font-size: 28px; color: #f5a623; }
+.ratingNum { font-family: 'Fraunces', serif; font-size: 22px; font-weight: 700; letter-spacing: -0.5px; }
+.ratingLabel { font-size: 12px; color: rgba(255,255,255,0.6); margin-top: 2px; }

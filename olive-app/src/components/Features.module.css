@@ -1,0 +1,59 @@
+.section { padding: 100px 24px; background: var(--cream-dark); }
+.container { max-width: 1100px; margin: 0 auto; }
+.header { text-align: center; margin-bottom: 60px; }
+.eyebrow {
+  display: inline-block;
+  font-size: 12px; font-weight: 600;
+  text-transform: uppercase; letter-spacing: 1.5px;
+  color: var(--olive-green);
+  background: var(--pale-green);
+  padding: 6px 16px;
+  border-radius: var(--radius-pill);
+  margin-bottom: 18px;
+}
+.title {
+  font-family: 'Fraunces', serif;
+  font-size: clamp(32px, 5vw, 48px);
+  font-weight: 800;
+  line-height: 1.1;
+  color: var(--dark-green);
+  letter-spacing: -1.5px;
+  margin-bottom: 16px;
+}
+.subtitle {
+  font-size: 16px; color: var(--light-text);
+  max-width: 480px; margin: 0 auto;
+  line-height: 1.65; font-weight: 300;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+@media (max-width: 900px) { .grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 600px) { .grid { grid-template-columns: 1fr; } }
+.card {
+  background: var(--white);
+  border-radius: var(--radius-md);
+  padding: 32px 28px;
+  border: 1px solid var(--border-light);
+  box-shadow: var(--shadow-sm);
+  cursor: default;
+  transition: box-shadow 0.3s;
+}
+.iconWrap {
+  width: 52px; height: 52px;
+  background: var(--pale-green);
+  border-radius: var(--radius-sm);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+.cardTitle {
+  font-family: 'Fraunces', serif;
+  font-size: 18px; font-weight: 700;
+  color: var(--dark-green);
+  margin-bottom: 10px;
+  letter-spacing: -0.3px;
+}
+.cardDesc { font-size: 14px; color: var(--light-text); line-height: 1.65; font-weight: 300; }

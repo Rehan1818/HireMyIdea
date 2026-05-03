@@ -1,0 +1,63 @@
+.section { padding: 100px 24px; background: var(--cream); }
+.container { max-width: 1100px; margin: 0 auto; }
+.header { text-align: center; margin-bottom: 64px; }
+.eyebrow {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: var(--olive-green);
+  background: var(--pale-green);
+  padding: 6px 16px;
+  border-radius: var(--radius-pill);
+  margin-bottom: 18px;
+}
+.title {
+  font-family: 'Fraunces', serif;
+  font-size: clamp(32px, 5vw, 48px);
+  font-weight: 800;
+  line-height: 1.1;
+  color: var(--dark-green);
+  letter-spacing: -1.5px;
+}
+.steps {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+@media (max-width: 768px) { .steps { grid-template-columns: 1fr; } }
+.step {
+  background: var(--white);
+  border-radius: var(--radius-md);
+  padding: 36px 32px;
+  border: 1px solid var(--border-light);
+  box-shadow: var(--shadow-sm);
+  position: relative;
+  overflow: hidden;
+  cursor: default;
+  transition: box-shadow 0.3s;
+}
+.step:hover { box-shadow: var(--shadow-md); }
+.stepNumber {
+  font-family: 'Fraunces', serif;
+  font-size: 72px;
+  font-weight: 900;
+  color: var(--cream-darker);
+  position: absolute;
+  top: -10px;
+  right: 16px;
+  line-height: 1;
+  letter-spacing: -3px;
+  user-select: none;
+}
+.stepIcon { font-size: 36px; margin-bottom: 20px; }
+.stepTitle {
+  font-family: 'Fraunces', serif;
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--dark-green);
+  margin-bottom: 12px;
+  letter-spacing: -0.5px;
+}
+.stepDesc { font-size: 14.5px; color: var(--light-text); line-height: 1.65; font-weight: 300; }

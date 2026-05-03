@@ -1,0 +1,65 @@
+.section { padding: 100px 24px; background: var(--cream-dark); }
+.container { max-width: 900px; margin: 0 auto; }
+.card {
+  background: var(--dark-green);
+  border-radius: 32px;
+  padding: 80px 60px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.decorCircle1 {
+  position: absolute; top: -80px; right: -80px;
+  width: 320px; height: 320px;
+  border-radius: 50%;
+  background: rgba(90,128,64,0.25);
+  pointer-events: none;
+}
+.decorCircle2 {
+  position: absolute; bottom: -100px; left: -60px;
+  width: 280px; height: 280px;
+  border-radius: 50%;
+  background: rgba(200,230,160,0.08);
+  pointer-events: none;
+}
+.eyebrow {
+  display: inline-block;
+  font-size: 12px; font-weight: 600;
+  text-transform: uppercase; letter-spacing: 1.5px;
+  color: #a8cc80; background: rgba(168,204,128,0.15);
+  padding: 6px 16px; border-radius: var(--radius-pill); margin-bottom: 20px;
+}
+.title {
+  font-family: 'Fraunces', serif;
+  font-size: clamp(32px, 5vw, 52px);
+  font-weight: 900; line-height: 1.08;
+  color: var(--white); letter-spacing: -2px; margin-bottom: 20px;
+}
+.desc {
+  font-size: 16px; color: rgba(255,255,255,0.65);
+  max-width: 440px; margin: 0 auto 40px;
+  line-height: 1.65; font-weight: 300;
+}
+.buttons {
+  display: flex; align-items: center; justify-content: center;
+  gap: 16px; flex-wrap: wrap; margin-bottom: 20px;
+}
+.iosBtn {
+  display: inline-flex; align-items: center; gap: 9px;
+  background: var(--white); color: var(--dark-green);
+  padding: 14px 28px; border-radius: var(--radius-pill);
+  font-size: 14.5px; font-weight: 600;
+  transition: background 0.2s;
+  box-shadow: 0 8px 28px rgba(0,0,0,0.25);
+}
+.iosBtn:hover { background: var(--cream); }
+.androidBtn {
+  display: inline-flex; align-items: center; gap: 9px;
+  background: transparent; color: white;
+  border: 1.5px solid rgba(255,255,255,0.3);
+  padding: 14px 28px; border-radius: var(--radius-pill);
+  font-size: 14.5px; font-weight: 500;
+  transition: border-color 0.2s, background 0.2s;
+}
+.androidBtn:hover { border-color: rgba(255,255,255,0.7); background: rgba(255,255,255,0.06); }
+.fine { font-size: 12.5px; color: rgba(255,255,255,0.4); margin-top: 8px; }
